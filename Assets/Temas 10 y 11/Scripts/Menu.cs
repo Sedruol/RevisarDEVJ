@@ -33,9 +33,8 @@ public class Menu : MonoBehaviour
     }
     public void ChangeAudio()
     {
-        float vol = Mathf.Log10((float)slider.value) * 20f;
-        backgroundMusic.volume = vol;
-        Debug.Log("20 por logaritmo en base 10 de " + slider.value + ": " + backgroundMusic.volume);
+        backgroundMusic.volume = slider.value;
+        Debug.Log("slider: " + slider.value + ", audio: " + backgroundMusic.volume);
     }
     public void QuitGame()
     {
